@@ -33,45 +33,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
-
-<script>
-var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
-
- // Get the canvas context to draw
-    const canvas = document.getElementById("drawingCanvas");
-    const ctx = canvas.getContext("2d");
-
-    // Function to draw a rectangle
-    function drawRectangle() {
-      ctx.fillStyle = "#FF0000"; // Red color
-      ctx.fillRect(50, 50, 150, 100); // x, y, width, height
-    }
-
-    // Function to write name
-    function writeName() {
-      ctx.font = "24px Arial";
-      ctx.fillStyle = "#0000FF"; // Blue color
-      ctx.fillText("Arav Rawat", 50, 200); // Text, x, y
-    }
-
-    // Function to insert an image
-    function drawImage() {
-      const image = new Image();
-      image.onload = function () {
-        ctx.drawImage(image, 50, 220, 150, 100); // x, y, width, height
-      };
-      image.src = "https://www.w3schools.com/html/img_girl.jpg"; // Sample image URL
-    }
-
-    // Function to clear the canvas
-    function clearCanvas() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-    }
-	
-</script>
-
 <style>	
 .body {
      margin: 0em;
@@ -120,6 +81,43 @@ console.log("This file last modified " + docMod); // generates message in javaSc
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
+<script>
+var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+
+ // Get the canvas context to draw
+    const canvas = document.getElementById("drawingCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Function to draw a rectangle
+    function drawRectangle() {
+      ctx.fillStyle = "#FF0000"; // Red color
+      ctx.fillRect(50, 50, 150, 100); // x, y, width, height
+    }
+
+    // Function to write name
+    function writeName() {
+      ctx.font = "24px Arial";
+      ctx.fillStyle = "#0000FF"; // Blue color
+      ctx.fillText("Arav Rawat", 50, 200); // Text, x, y
+    }
+
+    // Function to insert an image
+    function drawImage() {
+      const image = new Image();
+      image.onload = function () {
+        ctx.drawImage(image, 50, 220, 150, 100); // x, y, width, height
+      };
+      image.src = "https://www.w3schools.com/html/img_girl.jpg"; // Sample image URL
+    }
+
+    // Function to clear the canvas
+    function clearCanvas() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+	
+</script>
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
